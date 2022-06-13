@@ -1,11 +1,18 @@
+.navbar {
+  background-color: mediumturquoise;
+  padding: 5px;
+}
+
 .menu {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
   color: black;
-  padding: 20px;
   transition: all 0.15s linear;
+  padding: 5px 25px;
 }
 
 .menu:hover {
-  color: crimson;
+  color: white;
+  background-color: black;
 }

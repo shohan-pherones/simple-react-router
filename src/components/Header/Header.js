@@ -1,19 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
+  let activeStyles = {
+    backgroundColor: "salmon",
+  };
+
   return (
-    <div>
-      <Link to="/home" className="menu">
+    <div className="navbar">
+      <NavLink
+        to="/home"
+        className="menu"
+        style={({ isActive }) => (isActive ? activeStyles : undefined)}
+      >
         Home
-      </Link>
-      <Link to="/friends" className="menu">
+      </NavLink>
+      <NavLink
+        to="/friends"
+        className="menu"
+        style={({ isActive }) => (isActive ? activeStyles : undefined)}
+      >
         Friends
-      </Link>
-      <Link to="/about" className="menu">
+      </NavLink>
+      <NavLink
+        to="/about"
+        className="menu"
+        style={({ isActive }) => (isActive ? activeStyles : undefined)}
+      >
         About
-      </Link>
+      </NavLink>
     </div>
   );
 };

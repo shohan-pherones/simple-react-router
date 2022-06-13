@@ -3,7 +3,7 @@ import React from "react";
 const Friend = (props) => {
   const { name, phone, website, address } = props.friend;
   const friendStyle = {
-    backgroundColor: "teal",
+    backgroundColor: "mediumturquoise",
     color: "white",
     borderRadius: "10px",
     padding: "20px",
