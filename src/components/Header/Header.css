@@ -1,0 +1,11 @@
+.menu {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  padding: 20px;
+  transition: all 0.15s linear;
+}
+
+.menu:hover {
+  color: crimson;
+}
