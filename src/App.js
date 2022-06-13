@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import NotFound from "./components/NotFound/NotFound";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
+import FriendDetail from "./components/FriendDetail/FriendDetail";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/friends" element={<Friends />} />
+          <Route path="/friend/:friendId" element={<FriendDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
