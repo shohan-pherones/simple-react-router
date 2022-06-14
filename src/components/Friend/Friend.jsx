@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Friend.css";
 
 const Friend = (props) => {
+  const navigate = useNavigate();
   const { name, phone, website, address, id } = props.friend;
   const friendStyle = {
     backgroundColor: "mediumturquoise",
@@ -10,10 +11,14 @@ const Friend = (props) => {
     borderRadius: "10px",
     padding: "20px",
     margin: "20px",
-    height: "300px",
+    height: "400px",
     width: "200px",
   };
   const url = `/friend/${id}`;
+
+  const handleFriendClick = () => {
+    navigate(url);
+  };
 
   return (
     <div style={friendStyle}>
@@ -29,6 +34,12 @@ const Friend = (props) => {
       <Link to={url} className="button">
         Visit Me
       </Link>
+      <br />
+      <Link to={url}>
+        <button>Visit Me</button>
+      </Link>
+      <br />
+      <button onClick={handleFriendClick}>Visit Me</button>
     </div>
   );
 };
