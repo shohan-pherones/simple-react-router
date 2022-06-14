@@ -30,6 +30,13 @@ const Header = () => {
       >
         About
       </NavLink>
+      <NavLink
+        to="/about/culture"
+        className="menu"
+        style={({ isActive }) => (isActive ? activeStyles : undefined)}
+      >
+        Culture
+      </NavLink>
     </div>
   );
 };
