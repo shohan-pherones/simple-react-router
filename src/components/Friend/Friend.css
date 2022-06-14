@@ -1,0 +1,12 @@
+.button {
+  text-decoration: none;
+  background-color: #48d1cc;
+  box-shadow: 2px 2px 2px #3baba7, -2px -2px 2px #55f7f1;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.details {
+  height: 250px;
+}
